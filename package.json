@@ -1,0 +1,29 @@
+{
+  "name": "product-category",
+  "version": "1.0.0",
+  "description": "Nodejs CRUD Application using Express and MySQL",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABelcaid/Product-Category.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABelcaid/Product-Category/issues"
+  },
+  "homepage": "https://github.com/ABelcaid/Product-Category#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}
