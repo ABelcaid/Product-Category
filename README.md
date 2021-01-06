@@ -69,15 +69,12 @@ You can now access the server at http://localhost:3000
 📫 Contact Us:
 
 #### IDOUFKIR Mustafa
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Email](mustafa.idoufkir@gamil.com)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Twitter](https://twitter.com/MustafaIdoufkir)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [LinkedIn](https://www.linkedin.com/in/idoufkir)
+
+[![Email](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/email.svg)](mustafa.idoufkir@gamil.com) [![Linkedin](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/linkedin.svg)](https://www.linkedin.com/in/idoufkir) [![Twitter](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/twitter.svg)](https://twitter.com/MustafaIdoufkir)
 
 #### ABDERRAHIM BELCAID
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Email](belcaidna@gmail.com)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Twitter](https://twitter.com/BelcaidAB)
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [LinkedIn](https://www.linkedin.com/in/abderrahimbelcaid/)
 
+[![Email](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/email.svg)](belcaidna@gmail.com) [![Linkedin](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/linkedin.svg)](https://www.linkedin.com/in/abderrahimbelcaid/) [![Twitter](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/twitter.svg)](https://twitter.com/BelcaidAB)
 ----------
 
 ## Acknowledgements
