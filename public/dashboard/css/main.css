@@ -1,0 +1,15 @@
+
+h1{
+  color: gray;
+  font-size: 60px;
+  text-align:center;
+  text-decoration: underline;
+}
+
+ .card{
+    background-color:#454d55;
+  }
+.card:hover {
+    transform: scale(1.05);
+    border:4px solid white;
+  }

@@ -30,13 +30,6 @@ app.set('views', __dirname + '/views'); // set express to look in this folder to
 app.set('view engine', 'ejs'); // configure template engine
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json()); // parse form data client
-<<<<<<< Updated upstream
-
-
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
-=======
 const publicDirectory = path.join(__dirname, './public');
 app.use(express.static(path.join(__dirname, 'public', 'dashboard','css')));
 app.use(express.static(path.join(__dirname, 'public', 'dashboard','img')));
@@ -90,7 +83,6 @@ app.get('/add-category',(req, res) => {
 
 });
 
->>>>>>> Stashed changes
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`)
