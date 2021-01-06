@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title><%= title %></title>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/fav.png">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/linearicons.css">
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/nice-select.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" type="image/png" href="/img/favicon1.ico" />
+
+
+</head>
+
+<body>
+    <div class="main-wrapper-first">
+        <header>
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="header-top d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="/"><img src="/img/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+
+
+
+    <div class="main-wrapper">
+        <div class="banner-area">
+            <div class="container">
+                <div class="row height justify-content-center align-items-center">
+                    <!-- <img src="/img/header.png"> -->
+
+                    <div class="col-lg-4">
+                        <div class="banner-content">
+                            <h1>Meilleure <br>Solution pour votre <br>Entreprise</h1>
+                            <p class="text-white">inappropriate behavior is often laughed off as “boys will be boys,”
+                                women face higher conduct standards – especially in the workplace. That’s why it’s
+                                crucial that, as women.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="banner-video">
+                            <div class="overlay overlay-bg"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-wrapper">
+
+        <!-- Start Feature Area -->
+        <section class="featured-area">
+
+            <div class="container">
+                <section id="main-content">
+                    <section class="wrapper"><br>
+                        <div class="row">
+                            <!-- page start-->
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Réf</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Category</th>
+                                        <th scope="col">Edit</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% rows.forEach(function(row){ %>
+                                        <tr>
+                                            <th scope="row">PDA62-00<%= row.idp %>
+                                            </th>
+                                            <td>
+                                                <%= row.name_p %>
+                                            </td>
+                                            <td>
+                                                <%= row.price %>,00 $
+                                            </td>
+                                            <td>
+                                                <%= row.name_c %>
+                                            </td>
+                                            <td class="center hidden-phone">
+                                                <a href="/edit/p/<%= row.idp %>" class="btn btn-outline btn-sm"><i
+                                                        class="fa fa-pencil"></i></a>
+                                                <a href="/delete/p/<%= row.idp %>" class="btn btn-outline btn-sm"><i
+                                                        class="fa fa-trash-o "></i></a>
+                                            </td>
+                                        </tr>
+                                        <% }); %>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a href="/add-product" type="button" class="btn btn-outline-success">Add Product</a>
+                        <a href="/add-category" type="button" class="btn btn-outline-success">Add Category</a>
+            </div>
+            <!-- page end-->
+    </div>
+    <!-- /row -->
+    </section>
+    <!-- /wrapper -->
+    </section>
+    </div>
+    </section>
+    <!-- End Feature Area -->
+
+
+
+    <!-- Start Contact Area -->
+    <section class="subscription-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-5">
+                    <div class="subscribe-content">
+                        <h3 class="text-white">Abonnez-vous à notre newsletter</h3>
+                        <p class="text-white mb-0">Pour ne rien rater de notre actualité.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div id="mc_embed_signup">
+                        <form target="_blank" class="subscription relative">
+                            <input type="email" placeholder="Addresse email" required>
+                            <div style="position: absolute; left: -5000px;">
+                            </div>
+                            <button class="primary-btn hover d-inline-flex align-items-center"><span
+                                    class="mr-10">Commencer</span><span class="lnr lnr-arrow-right"></span></button>
+                            <div class="info"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Subscription Area -->
+    <!-- Start footer Area -->
+    <footer class="footer-area relative" style="background: url(/img/f-bg.jpg);">
+
+        <div class="overlay" style="background: rgba(	2, 215, 131);"></div>
+        <div class="container">
+            <div class="footer-content d-flex flex-column align-items-center">
+                <div class="footer-menu">
+                    <a href="#">Produit & Catégorie : E-com Relation</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ABelcaid" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://github.com/Idoufkir" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+                <div class="copy-right-text">Copyright &copy; 2021 All rights reserved | <i
+                        class="fa fa-quote-left"></i> BELKAID & IDOUFKIR <i class="fa fa-quote-right"></i> | </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+
+    </div>
+    <script>
+        $(function () {
+            $("input").on("input.highlight", function () {
+                // Determine specified search term
+                var searchTerm = $(this).val();
+                // Highlight search term inside a specific context
+                $("#context").unmark().mark(searchTerm);
+            }).trigger("input.highlight").focus();
+        });
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/mark.js/7.0.0/jquery.mark.min.js"></script>
+
+    <script src="/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="/https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script src="/js/vendor/bootstrap.min.js"></script>
+    <script src="/js/jquery.ajaxchimp.min.js"></script>
+    <script src="/js/owl.carousel.min.js"></script>
+    <script src="/js/jquery.nice-select.min.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/main.js"></script>
+
+</body>
+
+</html>
