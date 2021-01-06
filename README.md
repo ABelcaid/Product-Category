@@ -71,7 +71,7 @@ You can now access the server at http://localhost:3000
 
 #### IDOUFKIR Mustafa
 
-[![Email](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/email.svg)](mustafa.idoufkir@gamil.com) [![Linkedin](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/linkedin.svg)](https://www.linkedin.com/in/idoufkir) [![Twitter](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/twitter.svg)](https://twitter.com/MustafaIdoufkir)
+[![Email](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/email.svg =50x50)](mustafa.idoufkir@gamil.com) [![Linkedin](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/linkedin.svg)](https://www.linkedin.com/in/idoufkir) [![Twitter](https://raw.githubusercontent.com/tombryan/social-icon-font/6c2c9f490470909ffc686e4e19774545ddac7506/svg/twitter.svg)](https://twitter.com/MustafaIdoufkir)
 
 #### ABDERRAHIM BELCAID
 
