@@ -84,9 +84,7 @@
                                     <tr>
                                         <th scope="col">Réf</th>
                                         <th scope="col">Name</th>
-                                        <th scope="col">Price</th>
-                                        <th scope="col">Category</th>
-                                        <th scope="col">Edit</th>
+                                        <th scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -95,18 +93,13 @@
                                             <th scope="row">PDA62-00<%= row.idp %>
                                             </th>
                                             <td>
-                                                <%= row.name_p %>
-                                            </td>
-                                            <td>
-                                                <%= row.price %>,00 $
-                                            </td>
-                                            <td>
                                                 <%= row.name_c %>
                                             </td>
+
                                             <td class="center hidden-phone">
-                                                <a href="/product/editProduct/<%= row.idp %>" class="btn btn-outline btn-sm"><i
+                                                <a href="/category/editCategory/<%= row.idc %>" class="btn btn-outline btn-sm"><i
                                                         class="fa fa-pencil"></i></a>
-                                                <a href="/product/deleteProduct/<%= row.idp %>" class="btn btn-outline btn-sm"><i
+                                                <a href="/category/deleteCategory/<%= row.idc %>" class="btn btn-outline btn-sm"><i
                                                         class="fa fa-trash-o "></i></a>
                                             </td>
                                         </tr>
@@ -114,8 +107,7 @@
                                 </tbody>
                             </table>
                         </div>
-                        <a href="/product/addProduct" type="button" class="btn btn-outline-success">Add Product</a>
-                        <a href="/category" type="button" class="btn btn-outline-success">Category List</a>
+                        <a href="/category/addCategory" type="button" class="btn btn-outline-success">Add Category</a>
             </div>
             <!-- page end-->
     </div>

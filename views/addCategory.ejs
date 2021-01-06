@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title><%= title %></title>
+    <title>Add Category</title>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
@@ -52,20 +52,18 @@
             <div class="container">
                 <section id="main-content">
                     <section class="wrapper"><br>
-                              <h3><i class="fa  fa-plus"></i>  <%= title %></h3><br>
+                              <h3><i class="fa  fa-plus"></i>  Add Category</h3><br>
                       <div class="row">
                         <div class="container">
 
-                          <form action="/save-category" method="POST">
-                        
-                            <input type="hidden" name="idc" id="idc">
-              
+                            <form action="/category/addCategory" method="POST">
+                                      
                             <div class="form-group">
                               <label for="nom">Name Category :</label>
                               <input type="text" class="form-control"   name="name_c" id="name_c" required>
                             </div>
                         <br>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" class="btn btn-primary">Add Category</button>
                           </form>
                         </div>
                     <!-- /col-lg-12 -->

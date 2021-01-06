@@ -8,21 +8,11 @@ const app = express()
 const port = 3000
 
 // database connection 
-const db = mysql.createConnection ({
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  database: 'product-category'
-});
+const db = require("./dbconnection");
 
-// connect to database
-db.connect((err) => {
-  if (err) {
-      throw err;
-  }
-  console.log('Connected to database');
-});
-global.db = db;
+const categoryRoutes = require("./routes/category");
+const productRoutes = require("./routes/product");
+
 
 
 // configure middleware
@@ -38,7 +28,8 @@ app.use(express.static(publicDirectory));
 
 
 //------------------------------------ Routes Parts ----------------------------------//
-
+app.use("/category",categoryRoutes);
+app.use("/product",productRoutes);
 //------------------------------------ (HomeRoute) ----------------------------------//
 
 
@@ -57,31 +48,9 @@ app.get('/', (req, res) => {
  
  });
 
-//------------------------------------ (Product) ----------------------------------//
-
-app.get('/add-product',(req, res) => {
-  let sql = "SELECT * FROM category";
-  db.query(sql, (err, rows) => {
-      if(err) throw err;
-      res.render('addProduct', {
-          title : 'Add Product',
-          rows : rows
-      });
-
-  });
-  });
 
 
-//------------------------------------ (Categorie) ----------------------------------//
 
-app.get('/add-category',(req, res) => {
-
-  res.render('addCategory', {
-      title : 'Add Product',
-
-  });
-
-});
 
 
 app.listen(port, () => {

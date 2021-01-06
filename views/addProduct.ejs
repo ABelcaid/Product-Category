@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title><%= title %></title>
+    <title>Add Product</title>
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon-->
@@ -52,11 +52,11 @@
             <div class="container">
                 <section id="main-content">
                     <section class="wrapper"><br>
-                              <h3><i class="fa  fa-plus"></i>  <%= title %></h3><br>
+                              <h3><i class="fa  fa-plus"></i> Add Product</h3><br>
                       <div class="row">
                         <div class="container">
 
-                          <form action="/save-product" method="POST">
+                          <form action="/product/addProduct" method="POST">
                         
                             <input type="hidden" name="idp" id="idp">
               
@@ -72,7 +72,7 @@
                               <label>Category :</label>
                               <select class="form-control" name="id_spct" id="id_spct">
                                 <% rows.forEach(function(row){ %>
-                                 <option name="id_spct" id="id_spct" value={{this.id_spct}}>Ctg <%= row.idc %> : <%= row.name_c %></option>
+                                 <option name="idc" id="idc" value="<%= row.idc %>">Ctg <%= row.idc %> : <%= row.name_c %></option>
                                  <% }); %>
                              </select>
                             </div>
