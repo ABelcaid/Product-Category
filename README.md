@@ -9,6 +9,11 @@ Creation of a mini web application that allows you to make a CRUD.
 
 # Getting started
 
+## Requirements
+
+* Node Js >= 14.15.4
+* MySql 
+
 ## Installation
 
 Please check the official Node Js installation guide for server requirements before you start. [Official Documentation](https://nodejs.org/en/docs/)
