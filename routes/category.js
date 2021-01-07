@@ -53,12 +53,16 @@ Router.post("/addCategory", (req, res) => {
 Router.get("/editCategory/:idCategory", (req, res) => {
     
     let idCategory = req.params.idCategory;
-
-    res.render('editCategory', {
-        idc : idCategory,
-  
+    let sql = `Select * from category where idc = ${idCategory}`;
+    let query = db.query(sql,(err, result) => {
+        if(err) throw err;
+        res.render('editCategory', {
+	idc : idCategory,
+            row : result[0]
+        });
     });
 });
+
 Router.post("/editCategory/:idCategory", (req, res) => {
 
     let idCategory = req.params.idCategory;

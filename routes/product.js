@@ -37,7 +37,7 @@ Router.post("/addProduct", (req, res) => {
             return res.status(500).send(err);
         }
     });
-    res.redirect('addProduct');
+    res.redirect('/');
 
 });
 
