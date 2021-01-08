@@ -2056,11 +2056,20 @@ body {
   background: url(../img/header.png) no-repeat center center/cover;
   box-shadow: 0.872px 9.962px 30px 0px rgba(0, 0, 0, 0.3);
 }
+.banner1-video {
+  position: relative;
+  min-height: 400px;
+  background: url(../img/header2.png) no-repeat center center/cover;
+  box-shadow: 0.872px 9.962px 30px 0px rgba(0, 0, 0, 0.3);
+}
 
 .banner-video .overlay-bg {
   background: rgba(141, 218, 116, 0.15);
 }
 
+.banner1-video .overlay-bg {
+  background: rgba(141, 218, 116, 0.15);
+}
 .edit_auteur {
   position: relative;
   min-height: 440px;
