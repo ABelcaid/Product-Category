@@ -8,31 +8,31 @@ const db = require("../dbconnection");
 
 Router.get('/', (req, res) => {
     const sql = "SELECT * from category";
-       db.query(sql, (err, rows) => {
+    db.query(sql, (err, rows) => {
         console.log(rows);
-           if (err) throw err;
-           res.render('category', {
-            title : 'E-com Relation',
-               rows: rows
-           });
-   
-       })
-   
-   });
+        if (err) throw err;
+        res.render('category', {
+            title: 'E-com Relation',
+            rows: rows
+        });
+
+    })
+
+});
 
 
 
 // ================================= add category ================================
 
 
-Router.get('/addCategory',(req, res) => {
+Router.get('/addCategory', (req, res) => {
 
     res.render('addCategory', {
-        title : 'Add Category',
-  
+        title: 'Add Category',
+
     });
-  
-  });
+
+});
 
 Router.post("/addCategory", (req, res) => {
 
@@ -51,14 +51,14 @@ Router.post("/addCategory", (req, res) => {
 // ================================= edit category ================================
 
 Router.get("/editCategory/:idCategory", (req, res) => {
-    
+
     let idCategory = req.params.idCategory;
     let sql = `Select * from category where idc = ${idCategory}`;
-    let query = db.query(sql,(err, result) => {
-        if(err) throw err;
+    let query = db.query(sql, (err, result) => {
+        if (err) throw err;
         res.render('editCategory', {
-	idc : idCategory,
-            row : result[0]
+            idc: idCategory,
+            row: result[0]
         });
     });
 });
@@ -74,7 +74,7 @@ Router.post("/editCategory/:idCategory", (req, res) => {
         if (err) {
             return res.status(500).send(err);
         }
-        res.redirect('editCategory');
+        res.redirect('/category');
     });
 
 });
@@ -85,7 +85,7 @@ Router.post("/editCategory/:idCategory", (req, res) => {
 Router.get("/deleteCategory/:idCategory", (req, res) => {
 
     let idCategory = req.params.idCategory;
-   
+
     let query = 'DELETE FROM category WHERE idc = "' + idCategory + '"';
 
     db.query(query, (err, result) => {
