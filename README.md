@@ -62,7 +62,7 @@ You can now access the server at http://localhost:3000
 
 #### Short Description GIF
 
-   Gif
+![Gif Product_Category](https://user-images.githubusercontent.com/57219106/104018098-9117fc80-51b9-11eb-93ac-044855f558f7.gif)
 
 
 ----------
